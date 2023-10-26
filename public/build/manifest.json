@@ -1,0 +1,165 @@
+{
+  "_deleteModal-6c3c4667.js": {
+    "file": "assets/deleteModal-6c3c4667.js"
+  },
+  "_dropzone-f13a1568.js": {
+    "file": "assets/dropzone-f13a1568.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-4b35ba86.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/dropzone.css": {
+    "file": "assets/dropzone-49a6189d.css",
+    "isEntry": true,
+    "src": "resources/css/dropzone.css"
+  },
+  "resources/css/editor.css": {
+    "file": "assets/editor-d9108250.css",
+    "isEntry": true,
+    "src": "resources/css/editor.css"
+  },
+  "resources/css/tom-select.css": {
+    "file": "assets/tom-select-8b662d47.css",
+    "isEntry": true,
+    "src": "resources/css/tom-select.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-dfd64fb0.js",
+    "imports": [
+      "_deleteModal-6c3c4667.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/app/closeAds.js": {
+    "file": "assets/closeAds-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/app/closeAds.js"
+  },
+  "resources/js/app/darkToggle.js": {
+    "file": "assets/darkToggle-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app/darkToggle.js"
+  },
+  "resources/js/app/dropDown.js": {
+    "file": "assets/dropDown-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app/dropDown.js"
+  },
+  "resources/js/app/formsBtn.js": {
+    "file": "assets/formsBtn-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app/formsBtn.js"
+  },
+  "resources/js/dashboard.js": {
+    "file": "assets/dashboard-0a412bb9.js",
+    "imports": [
+      "resources/js/dashboard/tomSelect.js",
+      "_deleteModal-6c3c4667.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard.js"
+  },
+  "resources/js/dashboard/ads.js": {
+    "file": "assets/ads-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/ads.js"
+  },
+  "resources/js/dashboard/bulkUpload.js": {
+    "file": "assets/bulkUpload-3260e215.js",
+    "imports": [
+      "_dropzone-f13a1568.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/bulkUpload.js"
+  },
+  "resources/js/dashboard/chapterUpload.js": {
+    "file": "assets/chapterUpload-603a9bce.js",
+    "imports": [
+      "_dropzone-f13a1568.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/chapterUpload.js"
+  },
+  "resources/js/dashboard/deleteModal.js": {
+    "file": "assets/deleteModal-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/deleteModal.js"
+  },
+  "resources/js/dashboard/manga.js": {
+    "file": "assets/manga-6daff483.js",
+    "imports": [
+      "resources/js/dashboard/tomSelect.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/manga.js"
+  },
+  "resources/js/dashboard/navbar.js": {
+    "file": "assets/navbar-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/navbar.js"
+  },
+  "resources/js/dashboard/slug.js": {
+    "file": "assets/slug-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/slug.js"
+  },
+  "resources/js/dashboard/tablesFilter.js": {
+    "file": "assets/tablesFilter-f605c51e.js",
+    "imports": [
+      "resources/js/app/closeAds.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/dashboard/tablesFilter.js"
+  },
+  "resources/js/dashboard/tomSelect.js": {
+    "file": "assets/tomSelect-5d20063c.js",
+    "isEntry": true,
+    "src": "resources/js/dashboard/tomSelect.js"
+  },
+  "themes/default/css/app.css": {
+    "file": "assets/app-efc4a1e7.css",
+    "isEntry": true,
+    "src": "themes/default/css/app.css"
+  },
+  "themes/default/js/app.css": {
+    "file": "assets/app-2d4c25b0.css",
+    "src": "themes/default/js/app.css"
+  },
+  "themes/default/js/app.js": {
+    "css": [
+      "assets/app-2d4c25b0.css"
+    ],
+    "file": "assets/app-ca63ddab.js",
+    "isEntry": true,
+    "src": "themes/default/js/app.js"
+  },
+  "themes/default/js/chapter.js": {
+    "file": "assets/chapter-4760d0c4.js",
+    "isEntry": true,
+    "src": "themes/default/js/chapter.js"
+  }
+}

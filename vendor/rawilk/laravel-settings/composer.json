@@ -1,0 +1,77 @@
+{
+    "name": "rawilk/laravel-settings",
+    "description": "Store Laravel application settings in the database.",
+    "keywords": [
+        "rawilk",
+        "laravel-settings",
+        "settings",
+        "database settings",
+        "eloquent model settings"
+    ],
+    "homepage": "https://github.com/rawilk/laravel-settings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Randall Wilk",
+            "email": "randall@randallwilk.dev",
+            "homepage": "https://randallwilk.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "illuminate/database": "^8.0|^9.0|^10.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "spatie/laravel-package-tools": "^1.2|^1.13"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^3.5",
+        "laravel/pint": "^1.2",
+        "mockery/mockery": "^1.4.2",
+        "orchestra/testbench": "^6.5|^7.0|^8.0",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-laravel": "^1.3",
+        "pestphp/pest-plugin-parallel": "^1.0|^1.2",
+        "phpunit/phpunit": "^9.4",
+        "spatie/laravel-ray": "^1.0|^1.31"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawilk\\Settings\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rawilk\\Settings\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ],
+        "test": "vendor/bin/pest -p",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rawilk\\Settings\\SettingsServiceProvider"
+            ],
+            "aliases": {
+                "Settings": "Rawilk\\Settings\\Facades\\Settings",
+                "SettingsFactory": "Rawilk\\Settings\\Drivers\\Factory"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

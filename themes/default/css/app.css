@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-active {
+  @apply rounded-t-md border-b-2 border-blue-500 bg-white bg-opacity-5;
+}
+
+.input-theme {
+  @apply dark:bg-input w-full rounded-md border-black/10 px-4 py-3;
+}
+
+.table-action {
+  @apply text-indigo-500 transition hover:text-indigo-600;
+}
+
+.cards-container {
+  @apply xlg:grid-cols-8 grid grid-cols-3 gap-[10px] sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body:lang(ar) {
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+
+body:lang(en) {
+  font-family: "Inter", sans-serif !important;
+}
+
+select:lang(ar) {
+  background-position: left 0.5rem center;
+}
+
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyload.is-loaded {
+  opacity: 1;
+}
+
+.dark ::-ms-reveal {
+  filter: invert(100%);
+}

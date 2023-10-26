@@ -1,0 +1,39 @@
+.tox-tinymce {
+  @apply !border-[1px] !border-black/10 dark:!border-white/10;
+}
+
+.tox-editor-header,
+.tox .tox-menubar,
+.tox .tox-toolbar-overlord,
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary,
+.tox .tox-promotion,
+.tox-statusbar,
+.tox .tox-tbtn--bespoke {
+  @apply dark:!bg-[#09090b];
+}
+
+.tox .tox-tbtn--bespoke {
+  @apply !border-[1px] !border-solid dark:!border-white/10;
+}
+
+.tox .tox-tbtn {
+  @apply !transition;
+}
+
+.tox-statusbar {
+  @apply !flex !h-8 !items-center !p-3;
+}
+
+.tox-statusbar__text-container {
+  @apply !items-center;
+}
+
+.tox .tox-statusbar__resize-handle {
+  @apply !self-center;
+}
+
+.tox .tox-edit-area__iframe {
+  @apply dark:!bg-black;
+}

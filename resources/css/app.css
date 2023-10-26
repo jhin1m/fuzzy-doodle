@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body:lang(ar) {
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+
+body:lang(en) {
+  font-family: "Inter", sans-serif !important;
+}
+
+@layer components {
+  select,
+  option {
+    @apply cursor-pointer;
+  }
+
+  .input {
+    @apply rounded-md border-[1px] border-black/10 bg-transparent px-3 py-2 text-sm placeholder:text-black/50 focus:ring-0 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:placeholder:text-white/50;
+  }
+
+  .input[type="file"] {
+    @apply file:cursor-pointer file:rounded-md file:border-none file:bg-black/90 file:px-3 file:py-2 file:text-white file:transition-all file:duration-200 file:hover:bg-black/60 dark:file:bg-white/10 dark:file:hover:bg-white/20;
+  }
+
+  .input[multiple] {
+    @apply overflow-y-hidden;
+  }
+
+  .input option {
+    @apply dark:bg-[#09090b];
+  }
+
+  .input[type="checkbox"] {
+    @apply -order-1 h-5 w-5 cursor-pointer rounded-md bg-transparent !p-2;
+  }
+}
+
+@layer utilities {
+  .transition {
+    @apply transition-all duration-200;
+  }
+}
+
+select:lang(ar) {
+  background-position: 5px !important;
+}
+
+.container-app {
+  @apply px-3 py-5 md:container md:mx-auto md:px-5;
+}
+
+.container-app.navbar {
+  @apply !py-0 !pb-5;
+}
+
+.pagination-link {
+  @apply flex cursor-pointer items-center justify-center rounded-md border-[1px] border-black/10 px-3 py-2 transition-all duration-200 hover:bg-black/10 dark:border-white/10 dark:hover:bg-white/10;
+}
+
+.pagination-link.pagination-disabled {
+  @apply cursor-not-allowed;
+}
+
+.pagination-active {
+  @apply bg-black/10 dark:bg-white/10;
+}
+
+.ts-control {
+  @apply !rounded-md !border-[1px] !border-black/10 !px-3  dark:!border-white/10 dark:!bg-[#09090b];
+}
+
+.ts-dropdown {
+  @apply !z-50;
+}
+
+.ts-dropdown.single {
+  @apply z-50;
+}
+
+.ts-control > input {
+  @apply !input;
+}
+
+.ts-wrapper.multi .ts-control > div {
+  @apply !border-[1px] !border-black/10 dark:!border-white/10 dark:!bg-black dark:!text-white;
+}
+
+.ts-wrapper.multi .ts-control > div {
+  @apply !flex !items-center !gap-2 !rounded-md !px-3 !py-1;
+}
+
+.ts-wrapper.plugin-remove_button .item .remove {
+  @apply !-order-1 !m-0 !border-none !p-0 !text-base hover:!bg-transparent;
+}
+
+.toastui-editor-dark.toastui-editor-defaultUI {
+  @apply !border-white/10;
+}
+
+.toastui-editor-dark .ProseMirror,
+.toastui-editor-dark .toastui-editor-defaultUI-toolbar,
+.toastui-editor-dark .toastui-editor-md-tab-container,
+.toastui-editor-main .toastui-editor-md-tab-style > .active {
+  @apply !bg-[#09090b];
+}
+
+.ts-wrapper.plugin-remove_button .item {
+}
+
+.dark ::-ms-reveal {
+  filter: invert(100%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: hsla(0, 0%, 55%, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 55%, 0.7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

@@ -1,0 +1,59 @@
+{
+    "name": "owenvoke/blade-fontawesome",
+    "type": "library",
+    "description": "A package to easily make use of Font Awesome in your Laravel Blade views",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "blade-ui-kit/blade-icons": "^1.5",
+        "illuminate/support": "^9.0|^10.0",
+        "thecodingmachine/safe": "^2.4"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.5",
+        "orchestra/testbench": "^7.0|^8.0",
+        "pestphp/pest": "^1.22.3",
+        "phpstan/phpstan": "^1.9.17",
+        "spatie/pest-plugin-snapshots": "^1.1",
+        "symfony/var-dumper": "^6.0",
+        "thecodingmachine/phpstan-safe-rule": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OwenVoke\\BladeFontAwesome\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OwenVoke\\BladeFontAwesome\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test:types": "phpstan analyse --ansi --memory-limit=-1",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:types",
+            "@test:unit"
+        ],
+        "update:snapshots": "pest -d --update-snapshots",
+        "update:icons": [
+            "npm install",
+            "./vendor/bin/blade-icons-generate"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OwenVoke\\BladeFontAwesome\\BladeFontAwesomeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
